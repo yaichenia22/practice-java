@@ -12,6 +12,7 @@ public class LRUCache {
     private final int capacity;
 
     public LRUCache(int capacity) {
+        if (capacity <= 0) throw new IllegalArgumentException("Capacity must be greater than 0");
         this.capacity = capacity;
         this.cache = new LinkedHashMap<>(capacity);
     }
