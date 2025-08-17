@@ -21,6 +21,43 @@
   <build>
     <plugins>
       <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>build-helper-maven-plugin</artifactId>
+        <version>3.5.0</version>
+        <executions>
+          <execution>
+            <id>add-problem-sources</id>
+            <phase>generate-sources</phase>
+            <goals>
+              <goal>add-source</goal>
+            </goals>
+            <configuration>
+              <sources>
+                <source>problems/0146-lru-cache/src/main/java</source>
+                <source>problems/0002-add-two-numbers/src/main/java</source>
+                <source>problems/0020-valid-parentheses/src/main/java</source>
+                <source>problems/0001-two-sum/src/main/java</source>
+              </sources>
+            </configuration>
+          </execution>
+          <execution>
+            <id>add-problem-test-sources</id>
+            <phase>generate-test-sources</phase>
+            <goals>
+              <goal>add-test-source</goal>
+            </goals>
+            <configuration>
+              <sources>
+                <source>problems/0146-lru-cache/src/test/java</source>
+                <source>problems/0002-add-two-numbers/src/test/java</source>
+                <source>problems/0020-valid-parentheses/src/test/java</source>
+                <source>problems/0001-two-sum/src/test/java</source>
+              </sources>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
         <version>3.2.5</version>
