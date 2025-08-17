@@ -33,7 +33,7 @@
             </goals>
             <configuration>
               <sources>
-                <source>problems/0146-lru-cache/src/main/java</source>
+                <source>problems/0146-lrucache/src/main/java</source>
                 <source>problems/0002-add-two-numbers/src/main/java</source>
                 <source>problems/0020-valid-parentheses/src/main/java</source>
                 <source>problems/0001-two-sum/src/main/java</source>
@@ -48,7 +48,7 @@
             </goals>
             <configuration>
               <sources>
-                <source>problems/0146-lru-cache/src/test/java</source>
+                <source>problems/0146-lrucache/src/test/java</source>
                 <source>problems/0002-add-two-numbers/src/test/java</source>
                 <source>problems/0020-valid-parentheses/src/test/java</source>
                 <source>problems/0001-two-sum/src/test/java</source>
