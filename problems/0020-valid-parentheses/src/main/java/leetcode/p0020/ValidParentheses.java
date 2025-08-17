@@ -12,10 +12,8 @@ public class ValidParentheses {
         '}', '{'
     );
 
-    private final Deque<Character> queue = new ArrayDeque<>();
-
     public boolean isValid(String s) {
-
+        Deque<Character> queue = new ArrayDeque<>();
         for (char c : s.toCharArray()) {
             if (openingBracket(c)) queue.push(c);
             else if (closingBracket(c)) {
